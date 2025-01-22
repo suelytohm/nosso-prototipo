@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@color/white"
+        />
+
+    <!-- Conteúdo principal -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvNomeProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do Produto"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etNomeProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Digite o nome do produto"
+                android:inputType="textCapWords"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+
+            <!-- Marca -->
+            <TextView
+                android:id="@+id/tvMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marca"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Digite a marca"
+                android:inputType="textCapWords"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+
+            <!-- Código de Barras -->
+            <TextView
+                android:id="@+id/tvCodigoBarras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código de Barras"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etCodigoBarras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Digite ou escaneie o código de barras"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <!-- Quantidade -->
+            <TextView
+                android:id="@+id/tvQuantidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quantidade"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etQuantidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="Digite a quantidade"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+
+            <!-- Validade -->
+            <TextView
+                android:id="@+id/tvValidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Validade"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etValidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Selecione a validade"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/btnZerarProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zerar Quantidade"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:padding="12dp" />
+
+            <!-- Botão Salvar -->
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:padding="12dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

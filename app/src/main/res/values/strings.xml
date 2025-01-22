@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prototipo</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="marca_do_produto">Marca do Produto</string>
+    <string name="validade_2024_12_22">Validade: 2024-12-22</string>
+
+    <string name="validade_hoje">Validade Hoje</string>
+    <string name="produtos">Produtos</string>
+    <string name="adicionar">Adicionar</string>
+</resources>
