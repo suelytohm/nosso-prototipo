@@ -61,7 +61,7 @@ public class ListarProdutos extends AppCompatActivity {
         }
 
         btnOrfeu.setOnClickListener(view -> {
-            marca = "Orfeu";
+            busca = "Orfeu";
             carregarProdutos(recyclerView);
         });
 
@@ -109,8 +109,8 @@ public class ListarProdutos extends AppCompatActivity {
         new Thread(() -> {
             try {
                 if(marca != null){
-                    consulta = "/produtos/marca/" + marca;
-                } else if (busca != null) {
+                    consulta = "/produtos/buscar/" + marca;
+                } else if (busca != null || marca != null) {
                     consulta = "/produtos/buscar/" + busca;
                 } else {
                     consulta = "/produtos";

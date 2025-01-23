@@ -99,7 +99,7 @@ public class DetalheProduto extends AppCompatActivity {
                     // Tratando falha na requisição
                     Log.e("ErroAPI", "Falha na comunicação com o servidor: " + e.getMessage());
                     runOnUiThread(() -> Toast.makeText(DetalheProduto.this,
-                            "Erro na comunicação com o servidor.", Toast.LENGTH_SHORT).show());
+                            "Erro na comunicação com o servidor."  + e.getMessage(), Toast.LENGTH_SHORT).show());
                 }
 
                 @Override
